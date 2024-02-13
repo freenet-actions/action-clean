@@ -29,3 +29,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: echo Hello World
 ```
+
+## Hinweis zum Fork
+
+Wir haben diese Action geforkt, weil die originale Action über eine Version (die aktuellste) verfügt, die fehlerhaft ist (siehe https://github.com/AutoModality/action-clean/issues/6). Da der Dependabot aber gerne die aktuellste Version von einer Action ausrollt, umgehen wir das Problem mit der neuen Version hier, indem wir eine neue brauchbare Version gebaut haben.
