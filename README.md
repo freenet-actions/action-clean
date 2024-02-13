@@ -25,7 +25,7 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-      - uses: freenet-actions/action-clean@v1.1.2
+      - uses: freenet-actions/action-clean@v1
       - uses: actions/checkout@v2
       - run: echo Hello World
 ```
