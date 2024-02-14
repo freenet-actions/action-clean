@@ -25,7 +25,11 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-      - uses: AutoModality/action-clean@v1
+      - uses: freenet-actions/action-clean@v1
       - uses: actions/checkout@v2
       - run: echo Hello World
 ```
+
+## Hinweis zum Fork
+
+Wir haben diese Action geforkt, weil die originale Action über eine Version (die aktuellste) verfügt, die fehlerhaft ist (siehe https://github.com/AutoModality/action-clean/issues/6). Da der Dependabot aber gerne die aktuellste Version von einer Action ausrollt, umgehen wir das Problem mit der neuen Version hier, indem wir eine neue brauchbare Version gebaut haben.
