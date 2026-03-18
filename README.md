@@ -8,9 +8,7 @@ files that are not able to be removed by the user running the action.
 
 It seems the checkout action is run as the host user, but files created by other
 actions is run by root.  The subsequent checkout is unable to remove the files
-created from the previous run.  Action Runners does not automatically clean up.
-
-
+created from the previous run. Action Runners does not automatically clean up.
 
 ## Usage
 
@@ -26,7 +24,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: freenet-actions/action-clean@v1
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
       - run: echo Hello World
 ```
 

@@ -1,4 +1,3 @@
-# see package.yml for usage 
 name: 'Clean Workspace'
 description: 'Deletes all files in the work directory.'
 runs:
@@ -7,4 +6,3 @@ runs:
 branding:
   icon: delete
   color: red
-  
